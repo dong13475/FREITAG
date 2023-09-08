@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FREITAG</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/logo/favicon-32x32.png" type="image/x-icon" />
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- 외부 CSS 넣기 -->
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/media.css" />
+    <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- 뷰JS vuex CDN -->
+    <script src="https://unpkg.com/vuex@3.0.0"></script>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="./jQuery/jquery-3.6.3.min.js"></script>
+    <script src="./jQuery/jquery-ui.min.js"></script>
+    <script src="./jQuery/jquery-touch-punch.min.js"></script>
+    <!-- 외부 JS 넣기 -->
+    <script src="./JS/main.js" type="module"></script>
+  </head>
+  <body>
+    
+    <!-- 1. 상단영역 -->
+    <div id="top">
+      <header class="top ibx">
+        <!-- 로고 / 햄버거버튼 박스 -->
+        <div class="topNav">
+          <!-- 1-1. 로고 -->
+          <h1 class="logo">
+            <a href="#"><img src="./images/logo/logo.svg" alt="로고" /></a>
+          </h1>
+          <!-- 1-2. 회원가입버튼 -->
+          <div class="myInfo">
+            <a href="#" class="fa-solid fa-user">
+              <span class="ir">마이페이지</span>
+            </a>
+          </div>
+          <!-- 1-3. 햄버거버튼 -->
+          <div class="btbt">
+            <div class="ham">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- 전체 네비영역 박스 -->
+        <div class="gnbbx">
+          <!-- GNB네비 -->
+          <nav class="gnb">
+            <ul>
+              <!-- 검색버튼 -->
+              <li class="sech">
+                <div class="fa-solid fa-magnifying-glass">
+                  <span class="ir">search</span>
+                  <input type="text">
+                </div>
+              </li>
+              <li>
+                <a href="#">BAGS</a>
+                <!-- 클릭방향박스 -->
+                <div class="arrow">
+                  <div class="ar1"></div>
+                  <div class="ar2"></div>
+                </div>
+                <div class="smenu">
+                  <ol>
+                    <li>
+                      <a href="item.html?cat=BACKPACKS">BACKPACKS</a>
+                    </li>
+                    <li>
+                      <a href="item.html?cat=LAPTOP_BAGS">LAPTOP BAGS</a>
+                    </li>
+                    <li>
+                      <a href="item.html?cat=MESSENGER_BAGS">MESSENGER BAGS</a>
+                    </li>
+                    <li>
+                      <a href="item.html?cat=SHOPPER_BAGS">SHOPPER BAGS</a>
+                    </li>
+                    <li>
+                      <a href="item.html?cat=SHOULDER_BAGS">SHOULDER BAGS</a>
+                    </li>
+                    <li>
+                      <a href="item.html?cat=SPORTS_BAGS">SPORTS BAGS</a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <a href="#">ACCESSORIES</a>
+                <!-- 클릭방향박스 -->
+                <div class="arrow">
+                  <div class="ar1"></div>
+                  <div class="ar2"></div>
+                </div>
+                <div class="smenu">
+                  <ol>
+                    <li>
+                      <a href="#">KEYHOLDERS</a>
+                    </li>
+                    <li>
+                      <a href="#">LAPTOP SLEEVES</a>
+                    </li>
+                    <li>
+                      <a href="#">PHONE CASES</a>
+                    </li>
+                    <li>
+                      <a href="#">POUCHES</a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li><a href="#">ABOUT FREITAG</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <!-- SNS -->
+              <div class="sName">
+                <p>FREITAG NEWS</p>
+              </div>
+              <div class="sns">
+                <li>
+                  <a href="#" class="fa-brands fa-instagram">
+                    <span class="ir">인스타그램</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/FREITAG/" target="_blank" class="fa-brands fa-square-facebook">
+                    <span class="ir">페이스북</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/channel/UCHyhAHfoZOUw0zRCn1JSAMg" target="_blank" class="fa-brands fa-youtube">
+                    <span class="ir">유튜브</span>
+                  </a>
+                </li>
+                <li><a href="https://www.freitag.ch/en" target="_blank">@ FREITAG 2023</a></li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <!-- 2. 메인영역 -->
+    <div id="cont">
+      <main class="cont ibx">
+        <!-- 메인배경 -->
+        <div class="mainBg">
+          
+        </div>
+        <!-- 흘러가는 이미지 -->
+        <div class="fparent">
+          <div class="floating">
+            <ol>
+              <li>
+                <img src="./images/main/float1.png" alt="로고이미지" />
+              </li>
+              <li>
+                <img src="./images/main/float2.png" alt="로고이미지" />
+              </li>
+              <li>
+                <img src="./images/main/float1.png" alt="로고이미지" />
+              </li>
+              <li>
+                <img src="./images/main/float2.png" alt="로고이미지" />
+              </li>
+              <li>
+                <img src="./images/main/float1.png" alt="로고이미지" />
+              </li>
+              <li>
+                <img src="./images/main/float2.png" alt="로고이미지" />
+              </li>
+              <li>
+                <img src="./images/main/float1.png" alt="로고이미지" />
+              </li>
+              <li>
+                <img src="./images/main/float2.png" alt="로고이미지" />
+              </li>
+            </ol>
+          </div>
+        </div>
+        <!-- 메인 비디오 -->
+        <div class="videoTit">
+          <!-- 비디오텍스트 -->
+          <div class="vtit">
+            <li>FROM TRUCK TILL BAG</li>
+            <li>aka the production of FREITAG bags</li>
+            <li>The recycling of used truck tarps into unique,</li>
+            <li>highly functional bags takes place in five highly complex steps at our factory.</li>
+          </div>
+          <!-- 비디오영상 -->
+          <div class="videoTop">
+            <video autoplay loop muted>
+              <source src="./video/FREITAG - The Real Rip-Off.mp4" />
+            </video>
+          </div>
+        </div>
+        <!-- 가방 드래그 구역 -->
+        <!-- 제목 -->
+        <div class="ftxt">
+          <span>FIND YOUR BAGS</span>
+        </div>
+        <div id="dragBx">
+          <div class="dragBag">
+            <ul>
+              <li>
+                <a href="item.html?cat=BACKPACKS">
+                  <img src="./images/bags/all/2.jpg" alt="item" />
+                  <span>BACKPACKS</span>
+                </a>
+              </li>
+              <li>
+                <a href="item.html?cat=LAPTOP_BAGS">
+                  <img src="./images/bags/all/5.jpg" alt="item" />
+                  <span>LAPTOP BAGS</span>
+                </a>
+              </li>
+              <li>
+                <a href="item.html?cat=MESSENGER_BAGS">
+                  <img src="./images/bags/all/6.jpg" alt="item" />
+                  <span>MESSENGER</span>
+                </a>
+              </li>
+              <li>
+                <a href="item.html?cat=SHOPPER_BAGS">
+                  <img src="./images/bags/all/9.jpg" alt="item" />
+                  <span>SHOPPER & TOTE BAGS</span>
+                </a>
+              </li>
+              <li>
+                <a href="item.html?cat=SHOULDER_BAGS">
+                  <img src="./images/bags/all/12.jpg" alt="item" />
+                  <span>SHOULDER BAGS</span>
+                </a>
+              </li>
+              <li>
+                <a href="item.html?cat=SPORTS_BAGS">
+                  <img src="./images/bags/all/14.jpg" alt="item" />
+                  <span>SPORTS & TRAVEL BAGS</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 메인탑 -->
+        <div class="mainTop">
+          <!-- 메인탑 텍스트 -->
+          <div class="mainTxt">
+            <li>LESS TEXT - MORE STEPS</li>
+            <li>FREITAG’s one-of-a-kind bag production process for process engineers, flowchart fetishists,</li>
+            <li>icon idolizers and all the other info junkies who prefer visual learning to reading:</li>
+          </div>
+          <!-- 메인탑 메뉴 -->
+          <div class="mbox">
+            <div class="mimg">
+              <img src="./images/main/main.jpg" alt="이미지" />
+            </div>
+            <div class="mList">
+              <li>1. Truck spotting</li>
+              <li>2. Tarp removal</li>
+              <li>3. Extract test sample</li>
+              <li>4. Testing constituents</li>
+              <li>5. Confirming that tarp is safe</li>
+              <li>6. Disassembly</li>
+              <li>7. Washing</li>
+              <li>8. Drying</li>
+              <li>9. Bag design</li>
+              <li>10. Shipping to sewing partners</li>
+              <li>11. Sewing</li>
+              <li>12. Quality control</li>
+              <li>13. Photography</li>
+              <li>14. Shipping</li>
+              <li>15. Sale</li>
+            </div>
+          </div>
+        </div>
+        <!-- 악세서리 드래그 구역 -->
+        <!-- 드래그 제목 -->
+        <div class="ftxt">
+          <span>CHOOSE&nbsp;&nbsp;YOUR&nbsp;&nbsp;ACCESSORIES</span>
+        </div>
+        <div id="dragAc">
+          <div class="dragAcc">
+            <ul>
+              <li>
+                <img src="./images/accessories/all/1.jpg" alt="item" />
+                <span>KEYHOLDERS</span>
+              </li>
+              <li>
+                <img src="./images/accessories/all/2.jpg" alt="item" />
+                <span>LAPTOP SLEEVES</span>
+              </li>
+              <li>
+                <img src="./images/accessories/all/3.jpg" alt="item" />
+                <span>PHONE CASES</span>
+              </li>
+              <li>
+                <img src="./images/accessories/all/4.jpg" alt="item" />
+                <span>POUCHES</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    
+    
+    
+    <!-- 상단이동 이미지 -->
+    <div class="moveTop">
+      <img src="./images/recycle.png" alt="재활용이미지">
+    </div>
+    <!-- 3. 하단영역 -->
+    <div id="info">
+      <footer class="info ibx"></footer>
+    </div>
+
+    
+  </body>
+</html>

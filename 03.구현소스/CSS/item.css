@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* 프라이탁 PJ 아이템 CSS - item.css  */
+
+/* 외부 CSS 합치기 */
+@import url(./core.css);
+@import url(./common.css);
+
+/*** 메인 아이템네비 ***/
+.cont{
+  max-width: 1300px;
+}
+.itemNav{
+  font-size: 15px;
+  font-weight: bold;
+  max-width: 1400px;
+  margin: 0 auto; 
+}
+.itemNav>ol{
+  display: flex;
+  padding: 100px 0 0 50px;
+}
+/*** 아이템이름 ***/
+.itemName{
+  font-size: 60px;
+  padding: 50px 0 0 50px;
+  font-weight: bold;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.itemName>ol{
+  display: flex;
+  font-size: 30px;
+}
+.itemName>ol>li{
+  padding-right: 30px;
+}
+/*** 그리드영역 ***/
+.grid{
+  display: grid;
+  max-width: 1400px;
+  grid-template-columns: repeat(5, 1fr);
+  gap:25px 0;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.item{
+  width: 250px;
+  height: 250px;
+  transition: .4s;
+}
+.item:hover{
+  transform: scale(1.1);
+}
+.item>a>img{
+  width: 100%;
+  height: 100%;
+}
+
+/************* 뷰 영역 *************/
+/*** 슬라이드 ***/
+.vSlidebx{
+  position: relative;
+  margin: 0 auto;
+  height: 300px;
+  width: 80%;
+  overflow: hidden;
+  /* padding-bottom: 50px; */
+}
+.vSlide{
+  user-select: none;
+  /* 선택안되게 */
+  -webkit-user-drag: none;
+  /* 드래그안되게 */
+  position: absolute;
+  padding: 10px 50px;
+  height: 100%;
+}
+.islide{
+  display: flex;
+}
+.sitem{
+  position: relative;
+  width: 250px;
+  /* padding-right: 50px; */
+}
+.sitem img{
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+/*** 플렉스 ***/
+.vFlex{
+  max-width: 1400px;
+  display: flex;
+  /* flex: 1; */
+  padding: 50px 50px;
+  margin: 0 auto;
+}
+/* 그리드 */
+.igrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.igrid>li{
+  width: 400px;
+  height: 400px;
+}
+.igrid>li>img{
+  width: 100%;
+  height: 100%;
+}
+/* 닫기버튼 */
+.closebtn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 10%;
+  right: 10%;
+  cursor: pointer;
+  z-index: 1;
+}
+.closebtn li{
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+}
+.closebtn li:nth-child(1){
+  transform: rotate(45deg);
+}
+.closebtn li:nth-child(2){
+  transform: rotate(-45deg);
+}
+
+/* 텍스트 */
+.tflex{
+  padding: 100px 0 0 30px;
+}
+.tflex>h2{
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.sort{
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.cost{
+  font-size: 35px;
+  padding-bottom: 100px;
+}
+.shopp{
+  background-color: #000;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  line-height: 2;
+}
+.shopp>span{
+  color: #fff;
+  font-size: 25px;
+}
+
+
+/*** 아이템 관련 설명영역 ***/
+/* 네비영역 */
+.infoList{
+  display: flex;
+  padding: 70px 50px 0;
+  max-width: 1300px;
+  margin:0 auto;
+}
+.infoList>li{
+  padding: 10px 20px;
+  background-color: #fff;
+  /* outline: 1px dashed #000; */
+}
+.infoList li.on{
+  background-color: #e9e9e99d;
+}
+.infoList>li>h3{
+  font-size: 23px;
+  font-weight: bold;
+}
+/* 텍스트영역 */
+.infoText{
+  padding: 80px 0;
+  background-color: #e9e9e99d;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.iInfo{
+  font-size: 17px;
+  padding: 0 40px;
+  line-height: 2;
+  margin: 0 auto;
+}
+.vid{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.materi{
+  display: none;
+}
+
+
+/* 하단여유공간 임시 */
+.info{
+  padding: 100px;
+}

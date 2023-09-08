@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAGS | FREITAG</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/logo/favicon-32x32.png" type="image/x-icon" />
+    <!-- 폰트어썸 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- 외부 CSS 넣기 -->
+    <link rel="stylesheet" href="./CSS/item.css" />
+    <link rel="stylesheet" href="./CSS/elev.css" />
+    <link rel="stylesheet" href="./CSS/media.css" />
+    <!-- 뷰JS 스탠드얼론 버전 가져오기! -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- 뷰JS vuex CDN -->
+    <script src="https://unpkg.com/vuex@3.0.0"></script>
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="./jQuery/jquery-3.6.3.min.js"></script>
+    <script src="./jQuery/jquery-ui.min.js"></script>
+    <script src="./jQuery/jquery-touch-punch.min.js"></script>
+    <!-- 외부 JS 넣기 -->
+    <script src="./JS/item.js" type="module"></script>
+  </head>
+  <body>
+    <!-- 엘레베이터 전체박스 -->
+    <div id="eleV">
+      <elev-comp></elev-comp>
+    </div>
+    <!-- 1. 상단영역 -->
+    <div id="top">
+      <!-- 부모 컴포넌트 요소 -->
+      <top-comp></top-comp>
+    </div>
+    <!-- 2. 메인영역 -->
+    <div id="cont">
+      <!-- 1. 컨텐츠영역 -->
+      <contents1-comp v-show="$store.state.optview==1"></contents1-comp>
+      <contents2-comp v-show="$store.state.optview==2"></contents2-comp>
+      <!-- 
+        v-if="$store.state.optview===1"
+        v-if="$store.state.optview===2"
+      -->
+      <!-- 2. 설명영역 -->
+      <intro-comp></intro-comp>
+    </div>
+
+    <!-- 3. 하단영역 -->
+    <div id="info">
+      <footer class="info ibx">
+      </footer>
+    </div>
+  </body>
+</html>
+
