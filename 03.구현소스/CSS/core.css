@@ -15,6 +15,10 @@ body * {
   position: relative;
 }
 
+body{
+  background-color: #fff;
+}
+
 /* 초기화 */
 html,body,h1,h2,h3{
   margin: 0;
